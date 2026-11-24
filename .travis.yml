@@ -6,4 +6,4 @@ services:
 
 script:
   - docker build -t image_from_travis . # build image
-  - docker images image_from_travis. # use the image
+  - docker images image_from_travis # use the image
