@@ -1,0 +1,9 @@
+# This file gives commands to the travis CI to run docker and then build our application
+
+sudo: required
+services:
+  - docker # install docker
+
+script:
+  - docker build -t image_from_travis . # build image
+  - docker images image_from_travis. # use the image
